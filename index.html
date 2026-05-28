@@ -600,6 +600,72 @@ footer {
 .fl-label { font-size: 0.65rem; color: var(--sub); text-transform: uppercase; letter-spacing: 1.5px; }
 .fl-desc { font-size: 0.75rem; color: var(--sub2); line-height: 1.6; flex: 1; min-width: 200px; }
 
+
+/* ── VIDEO SECTION ── */
+.video-bg { background: var(--dark2); }
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+}
+.video-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: border-color 0.25s, transform 0.2s;
+}
+.video-card:hover { border-color: var(--gold2); transform: translateY(-3px); }
+.video-thumb {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+  background: #0d0d18;
+  overflow: hidden;
+}
+.video-thumb iframe,
+.video-thumb video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+}
+.video-thumb-placeholder {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 0.6rem;
+  background: linear-gradient(135deg, #0d0d18, #1a1a2e);
+  cursor: default;
+}
+.vtp-icon { font-size: 2.5rem; opacity: 0.35; }
+.vtp-label {
+  font-size: 0.65rem; font-weight: 700;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: rgba(212,160,23,0.4);
+}
+.video-info { padding: 1.1rem 1.3rem 1.3rem; }
+.video-tag {
+  font-size: 0.6rem; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; color: var(--gold2); margin-bottom: 0.4rem;
+}
+.video-title {
+  font-weight: 700; font-size: 0.92rem;
+  color: #f0ede8; margin-bottom: 0.4rem; line-height: 1.35;
+}
+.video-desc {
+  font-size: 0.75rem; color: var(--sub2); line-height: 1.6;
+}
+.video-coming-soon {
+  text-align: center; padding: 3rem 1.5rem;
+  border: 1px dashed var(--border); border-radius: 14px;
+  background: var(--card);
+}
+.vcs-icon { font-size: 2.5rem; margin-bottom: 0.8rem; }
+.vcs-title { font-weight: 700; font-size: 1rem; color: #f0ede8; margin-bottom: 0.4rem; }
+.vcs-sub { font-size: 0.78rem; color: var(--sub2); line-height: 1.6; }
+
 </style>
 </head>
 <body>
@@ -631,6 +697,7 @@ footer {
     <a href="#model">Model</a>
     <a href="#portfolio">Portfolio</a>
     <a href="#ventures">Ventures</a>
+    <a href="#videos">Videos</a>
     <a href="#income">Returns</a>
     <a href="#founder">Founder</a>
     <a href="#engage">Engage</a>
@@ -939,6 +1006,101 @@ footer {
         <span class="vb-tag">Ogun + Lagos rollout</span>
         <span class="vb-tag">Proven model transfer from PharmGo Rx</span>
       </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     VIDEO SECTION
+     HOW TO ADD A VIDEO:
+     Option A — YouTube: replace the <div class="video-thumb-placeholder">
+       block inside any card with:
+       <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+     Option B — Vimeo: same but use https://player.vimeo.com/video/VIDEO_ID
+     Option C — Direct MP4: <video controls><source src="YOUR_URL.mp4"></video>
+     ============================================================ -->
+<section id="videos" class="video-bg">
+  <div class="container">
+    <div class="sec-eyebrow">Watch &amp; Understand</div>
+    <h2 class="sec-title">AariNAT in Motion</h2>
+    <div class="gold-line"></div>
+    <p class="sec-sub">See the frameworks, the ventures, and the founder explain it directly. No decks needed — watch and decide.</p>
+
+    <div class="video-grid">
+
+      <!-- VIDEO CARD 1 — Founder / TECI Overview -->
+      <div class="video-card">
+        <div class="video-thumb">
+          <!-- REPLACE THIS BLOCK with an <iframe> or <video> when ready -->
+          <div class="video-thumb-placeholder">
+            <div class="vtp-icon">▶</div>
+            <div class="vtp-label">Video Coming Soon</div>
+          </div>
+        </div>
+        <div class="video-info">
+          <div class="video-tag">Founder Pitch</div>
+          <div class="video-title">Adebayo A. Adesanya — The AariNAT Thesis</div>
+          <div class="video-desc">The founder explains the TECI framework, Nigeria's infrastructure gap, and why this portfolio is structured the way it is.</div>
+        </div>
+      </div>
+
+      <!-- VIDEO CARD 2 — PharmGo Rx Demo -->
+      <div class="video-card">
+        <div class="video-thumb">
+          <!-- REPLACE THIS BLOCK with an <iframe> or <video> when ready -->
+          <div class="video-thumb-placeholder">
+            <div class="vtp-icon">▶</div>
+            <div class="vtp-label">Video Coming Soon</div>
+          </div>
+        </div>
+        <div class="video-info">
+          <div class="video-tag">Product Demo</div>
+          <div class="video-title">PharmGo Rx — How the WhatsApp Prescription System Works</div>
+          <div class="video-desc">A walkthrough of the patient journey: photo upload, AI parsing, pharmacy matching, payment, and delivery — all inside WhatsApp.</div>
+        </div>
+      </div>
+
+      <!-- VIDEO CARD 3 — TECI Deep Dive -->
+      <div class="video-card">
+        <div class="video-thumb">
+          <!-- REPLACE THIS BLOCK with an <iframe> or <video> when ready -->
+          <div class="video-thumb-placeholder">
+            <div class="vtp-icon">▶</div>
+            <div class="vtp-label">Video Coming Soon</div>
+          </div>
+        </div>
+        <div class="video-info">
+          <div class="video-tag">Framework Deep Dive</div>
+          <div class="video-title">TECI — Telecom-Energy Convergence Initiative Explained</div>
+          <div class="video-desc">A detailed walkthrough of the USD 1.5B framework: the problem, the model, the stakeholders, and the financial structure.</div>
+        </div>
+      </div>
+
+      <!-- VIDEO CARD 4 — EduBloom / Aarinat Foods -->
+      <div class="video-card">
+        <div class="video-thumb">
+          <!-- REPLACE THIS BLOCK with an <iframe> or <video> when ready -->
+          <div class="video-thumb-placeholder">
+            <div class="vtp-icon">▶</div>
+            <div class="vtp-label">Video Coming Soon</div>
+          </div>
+        </div>
+        <div class="video-info">
+          <div class="video-tag">Portfolio Overview</div>
+          <div class="video-title">EduBloom &amp; Aarinat Foods — Last-Mile Intelligence Applied</div>
+          <div class="video-desc">How the same zero-CAC, WhatsApp-native model that powers PharmGo Rx is being applied to education and groceries.</div>
+        </div>
+      </div>
+
+    </div><!-- /video-grid -->
+
+    <!-- Upload notice for Adebayo -->
+    <div style="margin-top:1.5rem; padding:1rem 1.2rem; background:var(--dark3); border:1px solid var(--border); border-radius:10px; text-align:center;">
+      <p style="font-size:0.72rem; color:var(--sub); line-height:1.6;">
+        <strong style="color:var(--gold2);">Adding a video:</strong> Upload to YouTube or WhatsApp, copy the share link, then replace the placeholder block in the HTML with an &lt;iframe&gt; embed. Full instructions are in the page source comments above each card.
+      </p>
     </div>
 
   </div>
