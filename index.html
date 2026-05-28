@@ -434,6 +434,172 @@ footer {
 .data-table tr:last-child td { border-bottom: none; }
 .data-table tr:hover td { background: var(--card); }
 .data-table td:first-child { color: var(--text); font-weight: 600; }
+
+/* ── VENTURES SECTION ── */
+.ventures-bg { background: var(--dark); }
+.venture-card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 14px; overflow: hidden; margin-bottom: 1.2rem;
+  transition: border-color 0.25s;
+}
+.venture-card:hover { border-color: var(--gold2); }
+.venture-card.vc-pharma { border-left: 4px solid var(--gold2); }
+.venture-card.vc-edu    { border-left: 4px solid var(--purple2); }
+.venture-card.vc-foods  { border-left: 4px solid var(--green2); }
+.venture-header {
+  background: var(--dark3); padding: 1.4rem 1.8rem;
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+}
+.venture-icon {
+  width: 44px; height: 44px; border-radius: 10px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; font-size: 1.3rem;
+}
+.vi-pharma { background: #b8960c18; border: 1px solid #b8960c44; }
+.vi-edu    { background: #6b21a818; border: 1px solid #6b21a844; }
+.vi-foods  { background: #16a34a18; border: 1px solid #16a34a44; }
+.venture-meta { flex: 1; min-width: 180px; }
+.venture-sector {
+  font-size: 0.62rem; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; margin-bottom: 3px;
+}
+.vs-pharma { color: var(--gold2); }
+.vs-edu    { color: var(--purple2); }
+.vs-foods  { color: var(--green2); }
+.venture-name { font-weight: 800; font-size: 1.1rem; color: #f5f0e8; margin-bottom: 2px; }
+.venture-tagline { font-size: 0.72rem; color: var(--sub); font-style: italic; }
+.venture-badges { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-left: auto; }
+.vbadge {
+  font-size: 0.6rem; font-weight: 700; letter-spacing: 1.5px;
+  text-transform: uppercase; padding: 4px 10px; border-radius: 4px; border: 1px solid;
+}
+.vb-live  { color: #4ade80; background: #4ade8012; border-color: #4ade8040; }
+.vb-seed  { color: #60a5fa; background: #60a5fa12; border-color: #60a5fa40; }
+.vb-built { color: var(--purple2); background: #7c3aed12; border-color: #7c3aed40; }
+.vb-open  { color: var(--gold2); background: #b8960c12; border-color: #b8960c40; }
+.venture-body { padding: 1.6rem 1.8rem; }
+.venture-cols { display: flex; gap: 2rem; flex-wrap: wrap; }
+.venture-desc { flex: 1; min-width: 240px; }
+.venture-desc p {
+  font-size: 0.8rem; color: var(--sub2); line-height: 1.75; margin-bottom: 0.8rem;
+}
+.venture-desc p strong { color: var(--text); }
+.venture-stats { min-width: 200px; }
+.vstat-label {
+  font-size: 0.6rem; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; margin-bottom: 0.7rem;
+}
+.vsl-pharma { color: rgba(212,160,23,0.65); }
+.vsl-edu    { color: rgba(124,58,237,0.65); }
+.vsl-foods  { color: rgba(34,197,94,0.65); }
+.vstat-rows { display: flex; flex-direction: column; gap: 0.5rem; }
+.vstat-row {
+  display: flex; justify-content: space-between; align-items: center;
+  background: var(--dark3); border: 1px solid var(--border);
+  border-radius: 7px; padding: 0.65rem 0.9rem;
+}
+.vsr-key { font-size: 0.7rem; color: var(--sub2); }
+.vsr-val { font-size: 0.9rem; font-weight: 800; }
+.vv-gold   { color: var(--gold2); }
+.vv-green  { color: var(--green2); }
+.vv-purple { color: var(--purple2); }
+.venture-bottom {
+  padding: 1rem 1.8rem; border-top: 1px solid var(--border);
+  background: var(--dark3);
+  display: flex; gap: 0.8rem; flex-wrap: wrap;
+}
+.vb-tag {
+  font-size: 0.68rem; color: var(--sub2);
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 4px; padding: 4px 10px; font-weight: 500;
+}
+.suite-pills { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.8rem; }
+.suite-pill {
+  display: flex; align-items: center; gap: 0.4rem;
+  background: #6b21a810; border: 1px solid #6b21a840;
+  border-radius: 6px; padding: 0.5rem 0.8rem;
+  font-size: 0.72rem; color: var(--purple2); font-weight: 600;
+}
+
+/* ── ENHANCED FOUNDER ── */
+.founder-enhanced {
+  max-width: 760px; margin: 0 auto;
+}
+.founder-top-new {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 12px 12px 0 0;
+  padding: 1.8rem 2rem;
+  display: flex; gap: 1.5rem; align-items: flex-start;
+  border-bottom: 1px solid var(--border); flex-wrap: wrap;
+}
+.founder-avatar-lg {
+  width: 72px; height: 72px; border-radius: 50%; flex-shrink: 0;
+  background: linear-gradient(135deg, var(--purple), var(--gold2));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.8rem; font-weight: 800; color: #fff;
+  font-family: 'DM Serif Display', serif;
+  border: 2px solid rgba(212,160,23,0.4);
+}
+.founder-id { flex: 1; }
+.founder-id .founder-name { font-family: 'DM Serif Display', serif; font-size: 1.35rem; margin-bottom: 0.2rem; }
+.founder-id .founder-role { font-size: 0.78rem; color: var(--gold2); font-weight: 600; margin-bottom: 0.15rem; }
+.founder-id .founder-co   { font-size: 0.72rem; color: var(--sub); }
+.founder-contact-row { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.8rem; }
+.founder-body-new { border: 1px solid var(--border); border-top: none; border-radius: 0 0 12px 12px; }
+.founder-quote-block {
+  background: #0d0d18; padding: 1.4rem 2rem;
+  border-bottom: 1px solid var(--border);
+}
+.founder-narrative { padding: 1.4rem 2rem; border-bottom: 1px solid var(--border); }
+.founder-narrative p { font-size: 0.8rem; color: var(--sub2); line-height: 1.8; margin-bottom: 0.7rem; }
+.founder-narrative p:last-child { margin-bottom: 0; }
+.founder-ventures-list { padding: 1.4rem 2rem; border-bottom: 1px solid var(--border); }
+.fv-eyebrow {
+  font-size: 0.6rem; font-weight: 700; letter-spacing: 2.5px;
+  text-transform: uppercase; color: rgba(212,160,23,0.6);
+  margin-bottom: 0.8rem;
+}
+.fv-row {
+  display: flex; align-items: center; gap: 0.8rem;
+  padding: 0.7rem 0.9rem; border-radius: 8px;
+  border: 1px solid var(--border); background: var(--dark3);
+  margin-bottom: 0.5rem; flex-wrap: wrap;
+}
+.fv-row:last-child { margin-bottom: 0; }
+.fv-icon { font-size: 1rem; flex-shrink: 0; }
+.fv-info { flex: 1; }
+.fv-name { font-size: 0.82rem; font-weight: 700; color: #f0ede8; }
+.fv-detail { font-size: 0.7rem; color: var(--sub2); margin-top: 1px; }
+.fv-badge {
+  font-size: 0.58rem; font-weight: 700; letter-spacing: 1.5px;
+  text-transform: uppercase; padding: 3px 8px; border-radius: 3px; border: 1px solid;
+  flex-shrink: 0;
+}
+.fvb-flagship { color: var(--gold2); background: #b8960c12; border-color: #b8960c44; }
+.fvb-live     { color: #4ade80; background: #4ade8012; border-color: #4ade8044; }
+.fvb-built    { color: var(--purple2); background: #7c3aed12; border-color: #7c3aed44; }
+.fvb-raising  { color: #4ade80; background: #4ade8008; border-color: #4ade8030; }
+.founder-timeline { padding: 1.4rem 2rem; border-bottom: 1px solid var(--border); }
+.ft-row {
+  display: flex; gap: 1rem; padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.ft-row:last-child { border-bottom: none; }
+.ft-year { font-size: 0.65rem; color: var(--gold2); font-weight: 600;
+  min-width: 80px; padding-top: 3px; letter-spacing: 0.5px; }
+.ft-body {}
+.ft-title { font-size: 0.82rem; font-weight: 700; color: #f0ede8; margin-bottom: 2px; }
+.ft-note  { font-size: 0.7rem; color: var(--sub2); line-height: 1.5; }
+.founder-linkedin {
+  padding: 1.2rem 2rem;
+  display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;
+  background: var(--dark3);
+}
+.fl-stat { }
+.fl-num { font-size: 1.4rem; font-weight: 800; color: var(--purple2); }
+.fl-label { font-size: 0.65rem; color: var(--sub); text-transform: uppercase; letter-spacing: 1.5px; }
+.fl-desc { font-size: 0.75rem; color: var(--sub2); line-height: 1.6; flex: 1; min-width: 200px; }
+
 </style>
 </head>
 <body>
@@ -464,6 +630,7 @@ footer {
   <div class="nav-links">
     <a href="#model">Model</a>
     <a href="#portfolio">Portfolio</a>
+    <a href="#ventures">Ventures</a>
     <a href="#income">Returns</a>
     <a href="#founder">Founder</a>
     <a href="#engage">Engage</a>
@@ -637,6 +804,146 @@ footer {
   </div>
 </section>
 
+
+<!-- VENTURES -->
+<section id="ventures" class="ventures-bg">
+  <div class="container">
+    <div class="sec-eyebrow">Operating Companies</div>
+    <h2 class="sec-title">Our Ventures</h2>
+    <div class="gold-line"></div>
+    <p class="sec-sub">AariNAT does not only originate frameworks. It builds and operates companies — each one solving a last-mile failure in Nigeria.</p>
+
+    <!-- PharmGo Rx -->
+    <div class="venture-card vc-pharma">
+      <div class="venture-header">
+        <div class="venture-icon vi-pharma">💊</div>
+        <div class="venture-meta">
+          <div class="venture-sector vs-pharma">Healthcare · Pharma</div>
+          <div class="venture-name">PharmGo Rx</div>
+          <div class="venture-tagline">Nigeria's First WhatsApp-Native Prescription Marketplace</div>
+        </div>
+        <div class="venture-badges">
+          <span class="vbadge vb-live">● Live</span>
+          <span class="vbadge vb-open">Seed Open</span>
+        </div>
+      </div>
+      <div class="venture-body">
+        <div class="venture-cols">
+          <div class="venture-desc">
+            <p>Nigeria's ₦4.05 trillion pharmaceutical market is failing patients at the last mile. Over <strong>40% of hospital discharges result in unfilled prescriptions.</strong> PharmGo Rx closes that gap — without requiring patients to download an app, own a smartphone, or change their behaviour.</p>
+            <p>Patients send a prescription photo via <strong>WhatsApp.</strong> The AI engine parses it, queries the pharmacy network, and returns fulfilment options — all within WhatsApp. Patient confirms, pays via mobile money, receives medicines. <strong>Customer acquisition cost: ₦0.</strong> The hospital refers every patient at discharge — structurally, not by incentive.</p>
+            <p>Pilot at Federal Medical Centre Abeokuta is live with verified, measurable results. Seed round: <strong>USD 500,000 for 15% equity</strong> · Pre-money: ₦4.53B · Break-even Month 9.</p>
+          </div>
+          <div class="venture-stats">
+            <div class="vstat-label vsl-pharma">Verified Pilot Traction — FMC Abeokuta</div>
+            <div class="vstat-rows">
+              <div class="vstat-row"><span class="vsr-key">Prescriptions processed</span><span class="vsr-val vv-gold">300+</span></div>
+              <div class="vstat-row"><span class="vsr-key">Patient satisfaction</span><span class="vsr-val vv-gold">85%</span></div>
+              <div class="vstat-row"><span class="vsr-key">Lead time reduction</span><span class="vsr-val vv-gold">45%</span></div>
+              <div class="vstat-row"><span class="vsr-key">Bankability score</span><span class="vsr-val vv-gold">9.2/10</span></div>
+              <div class="vstat-row"><span class="vsr-key">Customer acq. cost</span><span class="vsr-val vv-green">₦0</span></div>
+              <div class="vstat-row"><span class="vsr-key">Rx accuracy</span><span class="vsr-val vv-green">100%</span></div>
+              <div class="vstat-row"><span class="vsr-key">Month 24 revenue</span><span class="vsr-val vv-gold">₦25.9M/mo</span></div>
+              <div class="vstat-row"><span class="vsr-key">24-month profit</span><span class="vsr-val vv-gold">₦148M</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="venture-bottom">
+        <span class="vb-tag">USD 500K seed</span>
+        <span class="vb-tag">15% equity</span>
+        <span class="vb-tag">Break-even Month 9</span>
+        <span class="vb-tag">Ogun + Lagos expansion</span>
+        <span class="vb-tag">22 hospitals · 250 pharmacies target</span>
+        <span class="vb-tag">All metrics independently verified</span>
+      </div>
+    </div>
+
+    <!-- EduBloom -->
+    <div class="venture-card vc-edu">
+      <div class="venture-header">
+        <div class="venture-icon vi-edu">🎓</div>
+        <div class="venture-meta">
+          <div class="venture-sector vs-edu">Education · EdTech</div>
+          <div class="venture-name">EduBloom</div>
+          <div class="venture-tagline">School Fee Recovery &amp; EdTech Management Suite</div>
+        </div>
+        <div class="venture-badges">
+          <span class="vbadge vb-built">Platform Built</span>
+        </div>
+      </div>
+      <div class="venture-body">
+        <div class="venture-cols">
+          <div class="venture-desc">
+            <p>Nigerian private schools lose an estimated <strong>30–45% of tuition revenue annually</strong> to unpaid or delayed school fees. EduBloom is a structured EdTech suite that solves the school fee recovery crisis, automates school administration, and connects schools with parents, students, and community stakeholders through a single platform.</p>
+            <p>Built and operated by Aarinat Company Limited. The suite applies the same last-mile intelligence model used in PharmGo Rx — meeting users where they already are, not where platforms wish they were.</p>
+            <div class="suite-pills">
+              <span class="suite-pill">🏫 School Bloom — management system</span>
+              <span class="suite-pill">🖥️ Bloom Portal — admin dashboard</span>
+              <span class="suite-pill">🤖 Bloom Agent — AI field &amp; parent layer</span>
+            </div>
+          </div>
+          <div class="venture-stats">
+            <div class="vstat-label vsl-edu">Market Opportunity</div>
+            <div class="vstat-rows">
+              <div class="vstat-row"><span class="vsr-key">Private schools in Nigeria</span><span class="vsr-val vv-purple">70,000+</span></div>
+              <div class="vstat-row"><span class="vsr-key">Fee recovery gap</span><span class="vsr-val vv-purple">30–45%</span></div>
+              <div class="vstat-row"><span class="vsr-key">Suite status</span><span class="vsr-val vv-purple" style="font-size:0.72rem">Platform built</span></div>
+              <div class="vstat-row"><span class="vsr-key">Website</span><span class="vsr-val vv-purple" style="font-size:0.72rem">edubloom.com.ng</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="venture-bottom">
+        <span class="vb-tag">edubloom.com.ng</span>
+        <span class="vb-tag">School Bloom · Bloom Portal · Bloom Agent</span>
+        <span class="vb-tag">Nigerian private school market</span>
+      </div>
+    </div>
+
+    <!-- Aarinat Foods -->
+    <div class="venture-card vc-foods">
+      <div class="venture-header">
+        <div class="venture-icon vi-foods">🛒</div>
+        <div class="venture-meta">
+          <div class="venture-sector vs-foods">Agriculture · FMCG</div>
+          <div class="venture-name">Aarinat Foods</div>
+          <div class="venture-tagline">Last-Mile Voice Grocery Delivery</div>
+        </div>
+        <div class="venture-badges">
+          <span class="vbadge vb-seed">Seed Open</span>
+        </div>
+      </div>
+      <div class="venture-body">
+        <div class="venture-cols">
+          <div class="venture-desc">
+            <p>Adapted directly from the PharmGo Rx last-mile delivery model — the <strong>same proven WhatsApp-native, zero-CAC architecture</strong> applied to Nigeria's grocery market. Nigeria's FMCG sector is large, fragmented, and chronically inaccessible to households without reliable transport or internet-capable smartphones.</p>
+            <p>Aarinat Foods uses voice and WhatsApp ordering to deliver groceries to urban and peri-urban Nigerian households. <strong>Voice-first</strong> — no smartphone literacy required. <strong>Zero advertising spend.</strong> Same two-state rollout strategy as PharmGo Rx: Ogun State and Lagos State.</p>
+            <p>The PharmGo Rx pilot validates the model. Seed round: <strong>USD 500,000 for 15% equity</strong> · Pre-money: ₦4.53B.</p>
+          </div>
+          <div class="venture-stats">
+            <div class="vstat-label vsl-foods">Investment Terms</div>
+            <div class="vstat-rows">
+              <div class="vstat-row"><span class="vsr-key">Seed round</span><span class="vsr-val vv-green">USD 500K</span></div>
+              <div class="vstat-row"><span class="vsr-key">Equity offered</span><span class="vsr-val vv-green">15%</span></div>
+              <div class="vstat-row"><span class="vsr-key">Pre-money</span><span class="vsr-val vv-green">₦4.53B</span></div>
+              <div class="vstat-row"><span class="vsr-key">Model origin</span><span class="vsr-val vv-green" style="font-size:0.68rem">PharmGo Rx pilot</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="venture-bottom">
+        <span class="vb-tag">USD 500K seed</span>
+        <span class="vb-tag">15% equity</span>
+        <span class="vb-tag">Voice-first ordering</span>
+        <span class="vb-tag">Ogun + Lagos rollout</span>
+        <span class="vb-tag">Proven model transfer from PharmGo Rx</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <!-- INCOME STREAMS -->
 <section id="income">
   <div class="container">
@@ -791,34 +1098,136 @@ footer {
 <!-- FOUNDER -->
 <section id="founder" class="founder-bg">
   <div class="container">
-    <div class="sec-eyebrow">The Founder</div>
-    <h2 class="sec-title">The Evidence Is the Work</h2>
+    <div class="sec-eyebrow">The Person Behind the Frameworks</div>
+    <h2 class="sec-title">The Founder</h2>
     <div class="gold-line"></div>
-    <div class="founder-block">
-      <div class="founder-top">
-        <div class="founder-avatar">B</div>
-        <div>
-          <div class="founder-name"><span style="color:#7C3AED;font-weight:900;">AariNAT</span> Founder — <span style="color:#E8B422;">Adebayo A. Adesanya</span></div>
-          <div class="founder-title">Founder &amp; CEO · AariNAT Company Limited</div>
+
+    <div class="founder-enhanced">
+      <!-- Top: Identity -->
+      <div class="founder-top-new">
+        <div class="founder-avatar-lg">B</div>
+        <div class="founder-id">
+          <div class="founder-name">Adebayo A. Adesanya</div>
+          <div class="founder-role">Founder &amp; CEO · AariNAT Company Limited</div>
+          <div class="founder-co">RC-1732521 · Abeokuta, Ogun State, Nigeria</div>
+          <div class="founder-contact-row">
+            <a class="contact-pill" href="https://wa.me/2348145073491" target="_blank">💬 +234 814 507 3491</a>
+            <a class="contact-pill" href="mailto:aarinat.company.limited@gmail.com">✉️ aarinat.company.limited@gmail.com</a>
+            <a class="contact-pill" href="https://linkedin.com/in/adebayo-adesanya-1427433b6" target="_blank">🔗 LinkedIn</a>
+            <span class="contact-pill">📍 Abeokuta · Virtual meetings preferred</span>
+          </div>
         </div>
       </div>
-      <div class="founder-body">
-        <div class="founder-quote">"He does not ask investors to trust him. He asks them to read the documents, verify the engagements, and challenge the assumptions. He explicitly requests pushback over validation. The quality of this proposal is the evidence."</div>
-        <p class="founder-para">Bayo conceived, designed, and articulated all five AariNAT frameworks. He built the TECI thesis through three successive versions, each more rigorous and more honest than the last.</p>
-        <p class="founder-para">He identified and engaged every stakeholder in this portfolio — DFIs, solar partners, storage partners, independent reviewers, governance candidates, pharmaceutical specialists — without a physical office, without a salary, and without external funding. Working exclusively mobile-first from Abeokuta, Ogun State.</p>
-        <p class="founder-para">This is not a limitation. It is a demonstration that Nigeria's infrastructure gap can be addressed with nothing but a clear thesis, disciplined execution, and the right framework.</p>
-        <div class="founder-contacts">
-          <a class="contact-pill" href="https://wa.me/2348145073491" target="_blank">💬 WhatsApp: +234 814 507 3491</a>
-          <a class="contact-pill" href="mailto:aarinat.company.limited@gmail.com">✉️ aarinat.company.limited@gmail.com</a>
-          <a class="contact-pill" href="#">🔗 LinkedIn: Adebayo Adesanya</a>
-          <span class="contact-pill">📍 Abeokuta, Ogun State · Virtual meetings preferred</span>
+
+      <div class="founder-body-new">
+        <!-- Quote -->
+        <div class="founder-quote-block">
+          <div class="founder-quote">"He does not ask investors to trust him. He asks them to read the documents, verify the engagements, and challenge the assumptions. He explicitly requests pushback over validation. The quality of this proposal is the evidence."</div>
         </div>
+
+        <!-- Narrative -->
+        <div class="founder-narrative">
+          <p>Adebayo A. Adesanya is a Nigerian entrepreneur and investment thesis originator with over two decades of commercial, operational, and institutional experience across retail, hospitality, media, and community leadership. He is the Founder and CEO of AariNAT Company Limited — a strategic advisory and investment origination company operating across <strong>four active ventures simultaneously.</strong></p>
+          <p>What distinguishes Bayo is not academic study of Nigeria's infrastructure failures but lived commercial consequence. His Lagos-based Fan Milk franchise — built over three years of operational discipline — was destroyed by electricity failure. That personal experience of having a viable business bankrupted by infrastructure collapse is the foundation of TECI's design: a framework built not by a consultant who studied the problem, but by an entrepreneur who paid its full price.</p>
+          <p>He conceived, designed, and articulated all frameworks. He identified and engaged every stakeholder — DFIs, solar partners, storage partners, independent reviewers, governance candidates, pharmaceutical specialists — without a physical office, without a salary, and without external funding. Working exclusively mobile-first from Abeokuta.</p>
+        </div>
+
+        <!-- Active Ventures -->
+        <div class="founder-ventures-list">
+          <div class="fv-eyebrow">Active Ventures — Simultaneously Operated</div>
+          <div class="fv-row">
+            <span class="fv-icon">⚡</span>
+            <div class="fv-info">
+              <div class="fv-name">TECI / NECH — Telecom-Energy Convergence Initiative</div>
+              <div class="fv-detail">USD 1.5B framework · AFC review active · TedEn Egypt DOR signed · AlphaESS engaged</div>
+            </div>
+            <span class="fv-badge fvb-flagship">Flagship</span>
+          </div>
+          <div class="fv-row">
+            <span class="fv-icon">💊</span>
+            <div class="fv-info">
+              <div class="fv-name">PharmGo Rx — WhatsApp Prescription Marketplace</div>
+              <div class="fv-detail">Live at FMC Abeokuta · 300+ prescriptions · 9.2/10 bankability · Seed round open</div>
+            </div>
+            <span class="fv-badge fvb-live">Live</span>
+          </div>
+          <div class="fv-row">
+            <span class="fv-icon">🎓</span>
+            <div class="fv-info">
+              <div class="fv-name">EduBloom — School Fee Recovery &amp; EdTech Suite</div>
+              <div class="fv-detail">Platform built · School Bloom · Bloom Portal · Bloom Agent · edubloom.com.ng</div>
+            </div>
+            <span class="fv-badge fvb-built">Built</span>
+          </div>
+          <div class="fv-row">
+            <span class="fv-icon">🛒</span>
+            <div class="fv-info">
+              <div class="fv-name">Aarinat Foods — Last-Mile Voice Grocery Delivery</div>
+              <div class="fv-detail">PharmGo Rx model adapted · Ogun + Lagos rollout · Seed round open</div>
+            </div>
+            <span class="fv-badge fvb-raising">Raising</span>
+          </div>
+        </div>
+
+        <!-- Career Timeline -->
+        <div class="founder-timeline">
+          <div class="fv-eyebrow">Career Timeline</div>
+          <div class="ft-row">
+            <div class="ft-year">2022 — Present</div>
+            <div class="ft-body">
+              <div class="ft-title">Founder &amp; CEO · AariNAT Company Limited</div>
+              <div class="ft-note">RC-1732521 · Strategic advisory and investment origination · 4 active ventures</div>
+            </div>
+          </div>
+          <div class="ft-row">
+            <div class="ft-year">2015 — 2025</div>
+            <div class="ft-body">
+              <div class="ft-title">Parochial Secretary / Head of Media</div>
+              <div class="ft-note">Celestial Church of Christ, Archdiocesan HQ, Abeokuta · 10-year progressive leadership · Chairman, Juvenile Harvest (3,000+ children)</div>
+            </div>
+          </div>
+          <div class="ft-row">
+            <div class="ft-year">2013 — 2015</div>
+            <div class="ft-body">
+              <div class="ft-title">General Manager · Micron International Hotel, Abeokuta</div>
+              <div class="ft-note">Full hotel operations — staffing, finance, guest services, facilities maintenance</div>
+            </div>
+          </div>
+          <div class="ft-row">
+            <div class="ft-year">2007 — 2010</div>
+            <div class="ft-body">
+              <div class="ft-title">Franchise Owner &amp; Operations Manager · Fan Milk PLC, Lagos</div>
+              <div class="ft-note">Built and operated West Africa franchise. Destroyed by chronic electricity failure. This became TECI.</div>
+            </div>
+          </div>
+          <div class="ft-row">
+            <div class="ft-year">2005</div>
+            <div class="ft-body">
+              <div class="ft-title">BSc Accounting · Olabisi Onabanjo University, Ago-Iwoye</div>
+              <div class="ft-note">Financial accounting · Management accounting · Auditing · Business law</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LinkedIn momentum -->
+        <div class="founder-linkedin">
+          <div class="fl-stat">
+            <div class="fl-num">10,344+</div>
+            <div class="fl-label">Impressions</div>
+          </div>
+          <div class="fl-stat">
+            <div class="fl-num">128</div>
+            <div class="fl-label">Connections</div>
+          </div>
+          <div class="fl-desc">Active engagement from DFI, energy, and telecoms professionals across Nigeria, UK, Egypt, India, Qatar, and Rwanda — without any advertising spend. X: @AdesanyaTECI</div>
+        </div>
+
       </div>
     </div>
   </div>
 </section>
 
-<!-- ENGAGE -->
+<!-- ENGAGE --><!-- ENGAGE -->
 <section id="engage" class="engage-bg">
   <div class="container">
     <div class="sec-eyebrow">How to Engage</div>
